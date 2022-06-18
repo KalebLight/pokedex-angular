@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #e63946;
+  border-radius: 5px;
+}
+.title {
+  padding: 4px;
+  border-radius: 3px;
+}
+.title:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+  background-color: #d12834;
+  cursor: pointer;
+}
+span {
+  color: white;
+}
