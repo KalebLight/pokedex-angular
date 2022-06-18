@@ -5,13 +5,18 @@
 .title {
   padding: 4px;
   border-radius: 3px;
+  transition: 0.3s;
 }
 .title:hover {
   transition: 0.5s;
   opacity: 0.8;
-  background-color: #d12834;
   cursor: pointer;
+  background-color: #d12834;
 }
 span {
   color: white;
+}
+.icon {
+  height: 30px;
+  margin: 0 5px -7px 0;
 }
