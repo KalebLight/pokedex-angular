@@ -1,11 +1,7 @@
 <div class="divPai">
   <div class="cardList">
     <div routerLink="/pokemon/{{i+1}}" *ngFor="let pokemon of pokemons; let i = index">
-      <mat-card class="card">
-        <mat-card-header class="cardHeader">
-          <mat-card-title>{{pokemon.name | titlecase}} {{"#" + (i+1)}}</mat-card-title>
-        </mat-card-header>
-      </mat-card>
+      <app-card [name]="pokemon.name" [index]="i+1"></app-card>
     </div>
   </div>
 </div>

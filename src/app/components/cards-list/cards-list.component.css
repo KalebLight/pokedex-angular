@@ -13,14 +13,3 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.card {
-  height: 180px;
-  width: 180px;
-  background-color: white;
-  margin: 5px;
-}
-
-.cardHeader {
-  background-color: white;
-}

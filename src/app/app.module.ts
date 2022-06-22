@@ -9,9 +9,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardsListComponent } from './components/cards-list/cards-list.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, CardsListComponent],
+  declarations: [AppComponent, NavbarComponent, CardsListComponent, CardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
