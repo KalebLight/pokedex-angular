@@ -1,5 +1,10 @@
+.divPai {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .cardList {
-  width: 90%;
+  width: 85%;
   background-color: #e63946;
   margin-top: 30px;
   padding: 20px 20px;
@@ -10,8 +15,12 @@
 }
 
 .card {
-  height: 200px;
-  width: 220px;
-  background-color: gray;
+  height: 180px;
+  width: 180px;
+  background-color: white;
   margin: 5px;
+}
+
+.cardHeader {
+  background-color: white;
 }
