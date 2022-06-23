@@ -3,13 +3,30 @@
   width: 180px;
   background-color: white;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
 
-.cardHeader {
-  background-color: white;
+.card:hover {
+  background-color: #ccc;
+  margin-top: 10px;
+  transition: 0.3s;
+  height: 170px;
+  width: 170px;
+  cursor: pointer;
 }
 
 .img {
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
+}
+
+.cardTitle {
+  margin-bottom: -10px !important;
+  margin-left: -15px !important;
+  width: 170px;
+  font-size: 13px;
 }
