@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardsListComponent } from './pages/home/cards-list/cards-list.component';
 import { CardComponent } from './pages/home/card/card.component';
+import { PokemonComponent } from './pages/pokemon/pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CardComponent } from './pages/home/card/card.component';
     NavbarComponent,
     CardsListComponent,
     CardComponent,
+    PokemonComponent,
   ],
   imports: [
     BrowserModule,
