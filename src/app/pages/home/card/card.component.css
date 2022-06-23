@@ -22,10 +22,10 @@
 .img {
   width: 175px;
   height: 175px;
+  margin-bottom: -10px !important;
 }
 
 .cardTitle {
-  margin-bottom: -10px !important;
   margin-left: -15px !important;
   width: 170px;
   font-size: 13px;
