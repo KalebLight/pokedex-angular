@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CardsListComponent } from './pages/cards-list/cards-list.component';
+import { CardsListComponent } from './pages/home/cards-list/cards-list.component';
 import { CardComponent } from './pages/home/card/card.component';
 
 @NgModule({
