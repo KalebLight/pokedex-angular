@@ -12,10 +12,10 @@ export class CardsListComponent implements OnInit {
 
   constructor(public pokemonListService: PokemonListService) {}
   ngOnInit(): void {
-    this.getPokemon();
+    this.getPokemons();
   }
 
-  getPokemon() {
+  getPokemons() {
     this.pokemonListService.getPokemonsService().subscribe((data) => {
       this.pokemons = data.results;
     });

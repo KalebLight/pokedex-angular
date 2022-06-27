@@ -7,12 +7,17 @@ import { PokemonList } from '../Interface/pokemonList';
   providedIn: 'root',
 })
 export class PokemonListService {
-  apiUrl =
-    'https://pokeapi.co/api/v2/pokemon?https://pokeapi.co/api/v2/pokemon?offset=0&limit=151';
+  apiUrl = 'https://pokeapi.co/api/v2/pokemon';
 
   constructor(private httpClient: HttpClient) {}
 
   public getPokemonsService(): Observable<PokemonList> {
-    return this.httpClient.get<PokemonList>(this.apiUrl);
+    return this.httpClient.get<PokemonList>(
+      this.apiUrl + '?offset=0&limit=151'
+    );
+  }
+
+  public getSinglePokemonService(id: number): Observable<any> {
+    return this.httpClient.get<any>(this.apiUrl + '/' + id);
   }
 }
