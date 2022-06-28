@@ -1,7 +1,8 @@
 .pokemonInfo {
   background-color: #7a99c7;
-  width: 100%;
-  /* max-width:  30vw; */
+  width: 275px;
+  min-height: 100px;
+  max-width: 80%;
   height: 125px;
   display: flex;
   justify-content: space-evenly;

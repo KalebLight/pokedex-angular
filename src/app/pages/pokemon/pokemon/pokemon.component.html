@@ -1,8 +1,12 @@
 <div class="divPai">
   <!-- <h1>{{pokemon[0].name | titlecase}}</h1> -->
   <mat-card class="showPokemonPageCard">
+    <div class="imgDiv">
       <img class="imgPokemon" src="{{pokemonPhotoUrl}}" alt="">
+    </div>
+    <div class="dadosDiv">
       <app-info-pokemon class="cardInfo" [weightConversor]="weightConversor()" [heightConversor]="heightConversor()" [pokemonTypes]="pokemon[0].types"></app-info-pokemon>
+      <app-info-bars-div [hp]="pokemon[0].stats[0].base_stat" [atack]="pokemon[0].stats[1].base_stat" [defense]="pokemon[0].stats[2].base_stat" [speed]="pokemon[0].stats[5].base_stat"></app-info-bars-div>
+    </div>
   </mat-card>
-
 </div>

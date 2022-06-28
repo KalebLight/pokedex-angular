@@ -1,0 +1,11 @@
+.divCard{
+  background-color: yellowgreen;
+  width: 275px;
+  min-height: 100px;
+  max-width: 80%;
+  height: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 10px;
+}
