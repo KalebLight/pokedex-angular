@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-bars-div.component.css']
 })
 export class InfoBarsDivComponent implements OnInit {
-  @Input() atack!: number;
+  @Input() attack!: number;
   @Input() defense!: number;
   @Input() hp!: number;
   @Input() speed!: number;

@@ -1,13 +1,21 @@
 <mat-card class="divCard">
-  <div>
-    HP
-    <mat-progress-bar mode="determinate" value={{hp}}></mat-progress-bar>
-    Ataque
-    <mat-progress-bar mode="determinate" value={{atack}}></mat-progress-bar>
-    Defense
-    <mat-progress-bar mode="determinate" value={{defense}}></mat-progress-bar>
-    Speed
-    <mat-progress-bar mode="determinate" value={{speed}}></mat-progress-bar>
+  <div class="dados">
+    <div class="dado">
+      HP - {{hp}}
+      <mat-progress-bar mode="determinate" value={{hp}}></mat-progress-bar>
+    </div>
+    <div class="dado">
+      Ataque - {{attack}}
+      <mat-progress-bar mode="determinate" value={{attack}}></mat-progress-bar>
+    </div>
+    <div class="dado">
+      Defense - {{defense}}
+      <mat-progress-bar mode="determinate" value={{defense}}></mat-progress-bar>
+    </div>
+    <div class="dado">
+      Speed - {{speed}}
+      <mat-progress-bar mode="determinate" value={{speed}}></mat-progress-bar>  
+    </div>
   </div>
 
 

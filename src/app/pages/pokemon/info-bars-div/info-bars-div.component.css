@@ -9,3 +9,13 @@
   justify-content: space-evenly;
   margin: 10px 10px;
 }
+
+.dados{
+  width: 100%;
+}
+.dado{
+  margin: 5px 0%;
+}
+.barra{
+  width: 100%;
+}
