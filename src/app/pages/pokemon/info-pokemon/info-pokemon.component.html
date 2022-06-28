@@ -1,0 +1,14 @@
+<mat-card class="pokemonInfo">
+  <div>
+    <h2 class="titleInfo">Altura</h2>
+    <h2> {{heightConversor}} m</h2>
+    <h2 class="titleInfo">Peso</h2>
+    <h2>{{weightConversor}} Kg</h2>
+  </div>
+  <div>
+    <h2 class="titleInfo">Tipo(s): </h2>
+    <div>
+      <p class="pokemonTypes" *ngFor="let type of pokemonTypes"> {{type.type.name | titlecase}} </p>
+    </div>
+  </div>
+</mat-card>

@@ -1,42 +1,65 @@
-.divPai {
+/* .divPai {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .showPokemonPage {
-  width: 75%;
+  min-width: 500px;
+  width: 550px;
+  min-height: 500px;
   margin-top: 30px !important;
   background-color: #fcfcfc;
   display: flex;
+  flex-wrap: wrap;
 }
+
 h1 {
   font-size: 40px;
 }
+
 .imgPokemon {
-  width: 500px;
-  height: 500px;
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 300px;
+
 }
 .infoDiv {
   display: flex;
-  align-items: center;
-  background-color: gray;
-  width: 75%;
-}
-
-.pokemonInfo {
-  background-color: yellowgreen;
-  width: 30%;
-  height: 30%;
-  display: flex;
   justify-content: space-evenly;
-  margin-left: 10px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+} */
+
+.divPai {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.titleInfo {
-  margin-bottom: -10px;
-  color: white;
+.imgPokemon {
+  max-width: 100%;
+  min-width: 30%;
+  width: 350px;
+  max-height: 100%;
+  margin-right:100px;
+  
 }
 
-.pokemonTypes {
-  margin-bottom: -5px;
+.showPokemonPageCard {
+  width: 65%;
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cardInfo {
+  /* margin-right: -100px !important; */
 }

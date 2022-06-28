@@ -1,0 +1,18 @@
+.pokemonInfo {
+  background-color: #7a99c7;
+  width: 100%;
+  /* max-width:  30vw; */
+  height: 125px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.titleInfo {
+  margin-bottom: -10px;
+  color: white;
+}
+
+.pokemonTypes {
+  margin-bottom: -5px;
+}

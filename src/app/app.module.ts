@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardsListComponent } from './pages/home/cards-list/cards-list.component';
 import { CardComponent } from './pages/home/card/card.component';
 import { PokemonComponent } from './pages/pokemon/pokemon/pokemon.component';
+import { InfoPokemonComponent } from './pages/pokemon/info-pokemon/info-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PokemonComponent } from './pages/pokemon/pokemon/pokemon.component';
     CardsListComponent,
     CardComponent,
     PokemonComponent,
+    InfoPokemonComponent,
   ],
   imports: [
     BrowserModule,
