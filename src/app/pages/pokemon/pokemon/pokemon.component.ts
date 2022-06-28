@@ -1,4 +1,3 @@
-import { query } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonListService } from 'src/app/Service/pokemon-list.service';
@@ -10,7 +9,8 @@ import { PokemonListService } from 'src/app/Service/pokemon-list.service';
 })
 export class PokemonComponent implements OnInit {
   id!: number;
-  pokemon!: [];
+  pokemon: any[] = [];
+  pokemonPhotoUrl = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -24,8 +24,16 @@ export class PokemonComponent implements OnInit {
 
   getPokemon(id: number) {
     this.pokemonListService.getSinglePokemonService(id).subscribe((data) => {
-      this.pokemon = data;
-      console.log(this.pokemon);
+      this.pokemon.push(data);
+      this.pokemonPhotoUrl =
+        this.pokemon[0].sprites.other.dream_world.front_default;
     });
+  }
+
+  heightConversor() {
+    return this.pokemon[0].height / 10;
+  }
+  weightConversor() {
+    return this.pokemon[0].weight / 10;
   }
 }

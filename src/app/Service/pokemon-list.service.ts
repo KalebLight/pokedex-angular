@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PokemonList } from '../Interface/pokemonList';
-
 @Injectable({
   providedIn: 'root',
 })
@@ -17,7 +16,7 @@ export class PokemonListService {
     );
   }
 
-  public getSinglePokemonService(id: number): Observable<any> {
-    return this.httpClient.get<any>(this.apiUrl + '/' + id);
+  public getSinglePokemonService(id: number) {
+    return this.httpClient.get(this.apiUrl + '/' + id);
   }
 }

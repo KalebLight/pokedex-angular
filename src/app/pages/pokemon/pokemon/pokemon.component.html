@@ -1,1 +1,23 @@
-<p>pokemon works!</p>
+<div class="divPai">
+  <mat-card class="showPokemonPage">
+    <h1>{{pokemon[0].name | titlecase}}</h1>
+    <div class="infoDiv">
+      <img class="imgPokemon" src="{{pokemonPhotoUrl}}" alt="">
+      <mat-card class="pokemonInfo">
+        <div>
+          <h2 class="titleInfo">Altura</h2>
+          <h2> {{heightConversor()}} m</h2>
+          <h2 class="titleInfo">Peso</h2>
+          <h2>{{weightConversor()}} Kg</h2>
+        </div>
+        <div>
+          <h2 class="titleInfo">Tipo(s): </h2>
+          <div>
+            <p class="pokemonTypes" *ngFor="let type of pokemon[0].types"> {{type.type.name | titlecase}} </p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </mat-card>
+
+</div>

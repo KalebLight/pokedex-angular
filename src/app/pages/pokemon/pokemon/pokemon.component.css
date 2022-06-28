@@ -1,0 +1,42 @@
+.divPai {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.showPokemonPage {
+  width: 75%;
+  margin-top: 30px !important;
+  background-color: #fcfcfc;
+  display: flex;
+}
+h1 {
+  font-size: 40px;
+}
+.imgPokemon {
+  width: 500px;
+  height: 500px;
+}
+.infoDiv {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  width: 75%;
+}
+
+.pokemonInfo {
+  background-color: yellowgreen;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.titleInfo {
+  margin-bottom: -10px;
+  color: white;
+}
+
+.pokemonTypes {
+  margin-bottom: -5px;
+}

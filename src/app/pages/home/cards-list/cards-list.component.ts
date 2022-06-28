@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pokemon } from 'src/app/Interface/pokemon';
+import { Pokemons } from 'src/app/Interface/pokemons';
 import { PokemonListService } from 'src/app/Service/pokemon-list.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { PokemonListService } from 'src/app/Service/pokemon-list.service';
   styleUrls: ['./cards-list.component.css'],
 })
 export class CardsListComponent implements OnInit {
-  pokemons: Pokemon[] = [];
+  pokemons: Pokemons[] = [];
 
   constructor(public pokemonListService: PokemonListService) {}
   ngOnInit(): void {
